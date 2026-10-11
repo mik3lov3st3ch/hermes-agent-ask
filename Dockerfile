@@ -1,4 +1,5 @@
 FROM ghcr.io/hostinger/hvps-hermes-agent:latest
+LABEL org.opencontainers.image.source="https://github.com/mik3lov3st3ch/hermes-agent-ask"
 
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends \
