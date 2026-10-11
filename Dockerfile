@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN python3 -m venv /opt/hermes-python \
     && /opt/hermes-python/bin/pip install --no-cache-dir \
-       reportlab matplotlib pymupdf
+       reportlab matplotlib pymupdf pymysql
 
 ENV PATH="/opt/hermes-python/bin:${PATH}"
 ENV MPLCONFIGDIR=/tmp/matplotlib
